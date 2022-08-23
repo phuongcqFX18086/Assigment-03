@@ -1,0 +1,76 @@
+/* Mobile */
+/* ********************************************************* */
+
+@media (max-width: 576px) {
+  /* BANNER */
+  .name-position h1 {
+    font-size: 24px;
+  }
+
+  /* NAVBAR -------------------------------------------------*/
+  #nav-bar .container {
+    grid-template-columns: 1fr;
+  }
+
+  #nav-bar .container a {
+    text-align: left;
+    padding-left: 40vw;
+  }
+
+  /* BLOCK 1 ------------------------------------------------ */
+  #about .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ececec;
+    gap: 8px;
+  }
+
+  /* BLOCK 2 ------------------------------------------------- */
+  #job-info .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* CHUNG CHI, GIAI THUONG -----------------------------------*/
+  #certificate-detail {
+    grid-template-columns: 1fr;
+  }
+
+  #certificate .cert {
+    grid-template-columns: 1fr;
+  }
+  #certificate img {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  #certificate .border-1 {
+    border-right: none !important;
+  }
+  #certificate .border-2 {
+    padding-left: 0;
+  }
+  #certificate .border-3 {
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  /* BLOCK 3 */
+  /* DU AN------------------------------------------------------*/
+  .project {
+    margin: 32px 0;
+  }
+
+  .block-3 {
+    grid-template-columns: 1fr;
+  }
+  #project img {
+    width: 90vw;
+    display: block;
+    margin: 0 auto;
+  }
+  .when-where-job {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-left: 32px;
+  }
+}

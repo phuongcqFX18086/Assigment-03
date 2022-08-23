@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  font-size: 14px;
+}
+.container h1 {
+  margin: 24px 0 16px 0;
+  font-size: 24px;
+}
+
+/* BANNER ----------------------------------------------------------------------------*/
+#banner {
+  height: 500px;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("../images/banner.jpg");
+  background-size: cover;
+}
+.name-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.name-position h1 {
+  font-size: 32px;
+}
+
+/* NAVIGATOR -------------------------------------------------------------------------*/
+#nav-bar .container {
+  position: relative;
+  display: grid;
+  padding: 0;
+  grid-template-columns: 150px 150px 200px 150px 150px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+#nav-bar i {
+  color: #1da1f2;
+}
+#nav-bar a:link,
+#nav-bar a:visited {
+  text-decoration: none;
+  color: #232527;
+  padding: 16px;
+  text-align: center;
+  border-left: #dddddd solid 1px;
+}
+#nav-bar a:hover,
+#nav-bar a:active {
+  text-decoration: none;
+  color: #1da1f2;
+  background-color: #232527;
+}
+
+/* CHEN ANH AVATAR VAO GIUA -----------------------------------------------------------*/
+#my-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 5px #fff;
+}
+
+/* BLOCK 1-----------------------------------------------------------------------------*/
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  justify-content: space-between;
+  align-content: flex-start;
+  background-color: #ececec;
+  padding: 16px;
+}
+#about h1 {
+  margin-top: 48px;
+}
+#target p {
+  line-height: 1.7;
+}
+.mt-40-info li {
+  list-style-type: none;
+}
+.mt-40-info span {
+  font-weight: bold;
+}
+#personal-info ul {
+  padding: 0;
+}
+
+.mt-40-info {
+  line-height: 1.7;
+}
+
+.social-network {
+  margin-top: 12px;
+}
+.social-network a:link,
+.social-network a:visited {
+  color: #1da1f2;
+}
+.social-network a:hover,
+.social-network a:active {
+  background-color: #232527;
+}
+
+/* BLOCK 2 */
+/* KINH NGHIEM, HOC VAN, HOAT DONG------------------------------------------------------- */
+#job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+  row-gap: 0;
+  column-gap: 32px;
+}
+.company-detail li {
+  list-style-type: none;
+}
+.block-2 {
+  outline: #dddddd solid 1px;
+  line-height: 1.6;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  align-content: start;
+  margin-top: 32px;
+}
+.company-name {
+  font-weight: bold;
+  margin-top: 32px;
+}
+.start-end-time {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.max-box {
+  grid-column: 1 / 3;
+  padding-left: 24px;
+}
+
+.block-2 ul {
+  padding: 0;
+}
+
+.block-2 .icon {
+  justify-self: center;
+  align-self: center;
+  font-size: 40px;
+  color: #232527;
+}
+
+/* BLOCK 2 */
+/* SO THICH----------------------------------------------------------------------- */
+.favorite {
+  display: flex;
+  gap: 16px;
+  text-align: center;
+}
+.favorite i {
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding-top: 12px;
+  border: #1da1f2 solid 1px;
+  color: #1da1f2;
+}
+
+/* BLOCK 2 */
+/* NGON NGU, KY NANG-------------------------------------------------------------- */
+.language,
+.skills {
+  padding: 0;
+}
+.language span,
+.skills span {
+  border: 1px solid #1da1f2;
+  display: inline-block;
+  height: 2px;
+  margin: 8px 8px 24px 0px;
+  width: 64px;
+}
+#lang-1 span:last-child,
+#lang-2 span:last-child,
+#skill-2 span:last-child,
+#skill-3 span:last-child {
+  border: 1px solid #bdbdbd;
+}
+#skill-1 span:last-child,
+#skill-1 span:nth-child(3),
+#skill-4 span:last-child,
+#skill-4 span:nth-child(3) {
+  border: 1px solid #bdbdbd;
+}
+
+/* CHUNG CHI, GIAI THUONG------------------------------------------------------------- */
+#certificate-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#certificate .cert {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin: 32px 0px;
+}
+
+#certificate img {
+  height: 100px;
+}
+.certificate-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#certificate-detail .text {
+  line-height: 1.6;
+}
+#certificate .border {
+  border: none !important;
+}
+
+#certificate .border-1 {
+  padding-right: 32px;
+  border-right: 1px solid #d6c08d !important;
+  border-bottom: 1px solid #d6c08d !important;
+}
+#certificate .border-2 {
+  border-bottom: 1px solid #d6c08d !important;
+  padding-left: 32px;
+}
+
+/* BLOCK 3 */
+/* DU AN-------------------------------------------------------------------------------*/
+
+.block-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+}
+#project img {
+  width: 100%;
+}
+.proj-title {
+  font-weight: bold;
+  padding: 16px 8px;
+}
+.when-where-job {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 8px 0px;
+  border-top: #dddddd 1px solid;
+}
+.proj-title {
+  border-top: #dddddd 1px solid;
+  margin-bottom: 0 !important;
+}
+.when {
+  padding: 4px 12px;
+  background-color: #1da1f2;
+  border-radius: 16px;
+}
+
+.table,
+tr,
+td {
+  border-top: #dddddd 1px solid !important;
+  border-bottom: none !important;
+  border-collapse: collapse;
+  padding: 8px;
+}
+.mo-ta,
+.nhiem-vu,
+.cong-nghe {
+  width: 26%;
+}
+
+.when-where-job p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* FOOTER-------------------------------------------------------------------------------*/
+#footer .container {
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  margin-top: 32px;
+  padding: 24px 0 24px 0;
+  background-color: #ececec;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact p {
+  margin-bottom: 0;
+}
+#footer i {
+  font-size: 32px;
+  color: #1da1f2;
+}
+.contact a:link,
+.contact a:visited {
+  color: #1da1f2;
+}
+.contact a:hover,
+.contact a:active {
+  background-color: #232527;
+}
+
+/* #project a:link,
+#project a:visited {
+  text-decoration: none;
+} */
